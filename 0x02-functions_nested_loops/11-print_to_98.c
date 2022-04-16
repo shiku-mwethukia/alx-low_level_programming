@@ -1,26 +1,52 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_to_98 - print to 98
- * @n : number to start from
- * Return: 0 or 1
+ * print_times_table - prints times table
+ * @n: times table to use
+ * Return: void
 */
-
-void print_to_98(int n)
+void print_times_table(int n)
 {
 
-while (n < 98)
+int a = 0, rep, b;
+
+if (n < 0 || n > 15)
+return;
+
+while (a <= n)
 {
-printf("%i, ", n);
-n++;
+for (b = 0; b <= n; b++)
+{
+rep = a * b;
+if (b == 0)
+_putchar('0' + rep);
+else if (rep < 10)
+{
+_putchar(' ');
+_putchar('0');
+_putchar('0' + rep);
 }
-while (n > 98)
+else if (rep < 100)
 {
-printf("%i, ", n);
-n--;
+_putchar(' ');
+_putchar('0'b+ rep / 10);
+_putchar('0' + rep % 10);
+}
+else
+{
+_putchar('0' + rep / 100);
+_putchar('0' + (rep - 100) / 10);
+_putchar('0' + rep % 10);
+}
+if (b < n)
+{
+_putchar(',');
+_putchar(' ');
 }
 
-printf("98");
-putchar('\n');
 }
+_putchar('\n');
+a++;
+}
+}
+
