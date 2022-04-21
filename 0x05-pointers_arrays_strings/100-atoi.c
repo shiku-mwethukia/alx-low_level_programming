@@ -14,7 +14,7 @@ if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
 break;
 if (*(s + count) == '-')
 pn *= -1;
-if ((*(s + count) >= '0') && (*9s + count) <= '9'))
+if ((*(s + count) >= '0') && (*(s + count) <= '9'))
 {
 if (size > 0)
 m *= 10;
