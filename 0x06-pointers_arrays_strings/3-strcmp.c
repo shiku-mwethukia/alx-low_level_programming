@@ -16,7 +16,7 @@ while (op == 0)
 {
 if ((*(s1 + a) == '\0') && (*(s2 + a) == '\0'))
 break;
-op = *(s1 + a) - *(s2 + 1);
+op = *(s1 + a) - *(s2 + a);
 i++;
 }
 return (op);
