@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*@n: input number
+*@n: number
 *@c: iterator
 *Return: 1 if n is a prime number, 0 if n is not a prime number
 */
