@@ -14,7 +14,7 @@ int a, b;
 if (width < 1 || height < 1)
 return (NULL);
 gridout = malloc(height * sizeof(int *));
-if (gridout == NULL);
+if (gridout == NULL)
 {
 free(gridout);
 return (NULL);
