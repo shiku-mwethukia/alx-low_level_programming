@@ -23,7 +23,6 @@ void print_dog(struct dog *d)
 		printf("Owner: %s\n", d->owner);
 }#include "dog.h"
 #include <stdio.h>
-
 /**
  * print_dog - prints a dog
  *
